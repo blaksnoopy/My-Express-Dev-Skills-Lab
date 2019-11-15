@@ -11,5 +11,11 @@
     <a href="/">Home</a> |
     <a href="/skills">Dev Skills</a>
     <h1><%= skill %> Skill Page</h1>
+    <p>
+    <form action="/skills/<%= oneSkill %>?_method=DELETE"
+        class="delete-form" method="POST">
+        <button type="submit">Delete</button>
+      </form>
+    </p>
 </body>
 </html>

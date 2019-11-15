@@ -31,6 +31,7 @@ function index(req, res) {
 function show(req, res) {
     res.render('skills/show', {
         skill: Skill.getOneSkill(req.params.id),
-        oneSkill: req.params.id
+        oneSkill: req.params.id,
+        // idx: req.params.id
     });
 };
